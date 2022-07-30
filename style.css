@@ -1,0 +1,78 @@
+
+
+/*UTILITIES */
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --ff-sans:'Open Sans';
+    --ff-poppins:'Poppins';
+}
+.bg-clr-Violet
+{background-color:hsl(257, 40%, 49%)}
+.bg-clr-Soft-Magenta
+{background-color:hsl(300, 69%, 71%)}
+
+.ff-sans{
+    font-family: 'Open Sans';
+}
+.ff-poppins{
+    font-family: 'Poppins';
+}
+
+
+/*LAYOUT*/
+body{
+    color:white;
+    margin:3rem;
+    background:url("/images/bg-desktop.svg");
+    background-color:var(--Violet);
+}
+.head-container{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    height:7em;
+    aspect-ratio: 1;
+}
+.center-container{
+    display:grid;
+    grid-template-columns: minmax(0,0.1fr) 1fr 0.3fr 1fr minmax(0,0.1fr);
+}
+.text{
+    grid-column: 4;
+}
+.illust{
+    grid-column: 2;
+}
+@media screen and (max-width: 700px) {
+   .center-container{
+    display:flex;
+    
+   }
+   body{
+    background-color: blue;
+    font-size:5px;
+   }
+   .illust>img{
+    width: 20rem;
+   }
+
+  }
+
+.head{
+    font-size:2.5rem;
+    font-weight: 900;
+}
+.desc{
+    font-size:1.3rem;
+}
+button{
+    border: none;
+    padding:1em 4em;
+    border-radius: 30px;
+    color: var(--Violet);
+    background-color: white;
+}
